@@ -3,35 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+    
     <title>Mi Primer Sitio</title>
 </head>
 <body>
     <header>
-        <h1>Matías Knaus</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="intereses.html">Intereses</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+            <div class="izquierda">
+                <a href="/">Matías Knaus</a>
+            </div>
+
+            <div class="derecha">
+                <a href="https://github.com/mknaus-uade" target="_blank" rel="noopener noreferrer">
+                    <i class="github"></i>
+                    <span>Github</span>
+                </a>
+
+                <a href="https://ar.linkedin.com/in/mat%C3%ADas-knaus-06a804300" target="_blank" rel="noopener noreferrer">
+                    <i class="linkedin"></i>
+                    <span>Linkedin</span>
+                </a>
+
+                <a href="knausmaty@gmail.com">
+                    <i class="email"></i>
+                    <span>Email</span>
+                </a>
+                </div>
+            </div>
         </nav>
     </header>
+
     <main>
-        <h2>Infografia:</h2>
-        <img src="img/infografía.png" alt="infografía Matías">
-        <p>Aqui pueden encontrar una pequeña presentación de Matías Knaus</p>
+        <section class="perfil">
+            <div class="text">
+                <h2>Matías Knaus</h2>
+                <p>Soy estudiante de Gestión de la Tecnología y la Información. Nací en Olavarría pero hoy en día vivo en Tandil. Cuando no estoy estudiando, me gusta ir al gimnasio o salir a caminar.</p>
+
+                <div class="links">
+                    <a href="#habilidades">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Hablidades</span>
+                    </a>
+
+                    <a href="#contacto">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contacto</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="foto">
+                <img src="images/foto.jpeg" alt="matias">
+            </div>
+        </section>
+
+        <section id="habilidades" class="habilidad-section">
+            <h2>Habilidades</h2>
+            <div class="text">
+                Manejo con nivel intermedio lenguajes como HTML, CSS, Python y Java, lo que me permite desenvolverme tanto en desarrollo web como en programación orientada a objetos.
+            </div>
+
+            <div class="celdas">
+                <div class="celda">
+                    <img src="images/html-logo.webp" alt="html logo">
+                    <span>HTML</span>
+                </div>
+                
+                <div class="celda">
+                    <img src="images/css-logo.webp" alt="css logo">
+                    <span>CSS</span>
+                </div>
+                
+                <div class="celda">
+                    <img src="images/python-logo.png" alt="python logo">
+                    <span>Python</span>
+                </div>
+                
+                <div class="celda">
+                    <img src="images/java-logo.webp" alt="java logo">
+                    <span>Java</span>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <h3>Datos Simples:</h3>
-        <nav>
-            <ul>
-                <li>Nombre: Matías Knaus</li>
-                <li>Edad: 21 años</li>
-                <li>Carrera: Licenciatura en Gestión de Tecnología de la Información</li>
-                <li>Año: Primer Año</li>
-            </ul>
-        </nav>
-        <p>todos los derechos reservados</p>
+        <section id="contacto" class="contacto-section">
+            <h2>Contacto</h2>
+
+            <div class="grupo">
+                <div class="text">
+                Si querés saber más sobre mí o simplemente charlar, ¡no dudes en contactarme! Siempre estoy abierto a nuevas conexiones y oportunidades.
+                </div>
+
+                <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+
+                <label for="email">Email</label>
+                <input type="email" id="email">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="30" rows="10"></textarea>
+
+                <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
